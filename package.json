@@ -7,15 +7,34 @@
     "test": "tests"
   },
   "dependencies": {
+    "@faker-js/faker": "^10.1.0",
+    "argon2": "^0.44.0",
+    "cross-env": "^10.1.0",
+    "dotenv": "^17.2.3",
+    "moment-timezone": "^0.6.0",
+    "pdf-parse": "^2.4.5",
     "playwright": "^1.56.1",
     "playwright-core": "^1.56.1",
-    "undici-types": "^7.16.0"
+    "undici-types": "^7.16.0",
+    "winston": "^3.18.3"
   },
   "devDependencies": {
     "@playwright/test": "^1.56.1",
-    "@types/node": "^24.10.1"
+    "@types/node": "^24.10.1",
+    "cspell": "^9.3.2",
+    "eslint": "^9.39.1",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-playwright": "^2.3.0",
+    "eslint-plugin-prettier": "^5.5.4",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.6",
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.46.4"
   },
-  "scripts": {},
+  "scripts": {
+    "prepare": "husky"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sinugotshifhiwa4/pw-automation-framework-codebase.git"
