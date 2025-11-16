@@ -1,0 +1,31 @@
+{
+  "name": "pw-automation-framework-codebase",
+  "version": "1.0.0",
+  "description": "Playwright + TypeScript automation framework featuring POM architecture, reusable utilities, custom fixtures, and CI/CD support for scalable UI, API, and end-to-end testing",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "playwright": "^1.56.1",
+    "playwright-core": "^1.56.1",
+    "undici-types": "^7.16.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^24.10.1"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sinugotshifhiwa4/pw-automation-framework-codebase.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/sinugotshifhiwa4/pw-automation-framework-codebase/issues"
+  },
+  "homepage": "https://github.com/sinugotshifhiwa4/pw-automation-framework-codebase#readme"
+}
