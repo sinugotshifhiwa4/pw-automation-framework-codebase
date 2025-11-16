@@ -38,6 +38,17 @@ export default class ErrorHandler {
   }
 
   /**
+   * Logs an error with a structured format.
+   * This is useful for tracking errors in a structured format that can be easily parsed by log analysis tools.
+   * @param {string} source - The source of the error (e.g. the component or function name).
+   * @param {string} message - The error message to log.
+   */
+  public static log(source: string, message: string): void {
+    const error = new Error(message);
+    this.captureError(error, source);
+  }
+
+  /**
    * Clears all sanitized messages and logged errors from the cache.
    * This is useful when rotating environment secrets, as it ensures that any
    * previously logged errors or sanitized messages are no longer associated with the

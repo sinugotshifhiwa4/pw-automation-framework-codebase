@@ -36,7 +36,9 @@
     "prepare": "husky",
     "type-check": "tsc --noEmit",
     "lint": "eslint . --ext .ts,.js",
-    "lint-check": "npm run type-check && npm run lint"
+    "lint-check": "npm run type-check && npm run lint",
+    "pretest:encryption": "npm run lint-check",
+    "test:encryption": "npx playwright test tests/encryption"
   },
   "lint-staged": {
     "*.{ts,js}": [
