@@ -79,8 +79,6 @@ export default abstract class BaseFileManager {
 
   /**
    * Gets the base name of a given file path (excluding its extension).
-   * @param {string} filePath The file path to get the base name from.
-   * @returns {string} The base name excluding the extension.
    */
   public static getBaseName(filePath: string): string {
     return path.basename(filePath, path.extname(filePath));
@@ -88,8 +86,6 @@ export default abstract class BaseFileManager {
 
   /**
    * Gets the base name of a given file path including its extension.
-   * @param {string} filePath The file path to get the base name from.
-   * @returns {string} The base name including the extension.
    */
   public static getBaseNameWithExtension(filePath: string): string {
     return path.basename(filePath);
