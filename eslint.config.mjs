@@ -44,6 +44,17 @@ export default [
 
     rules: {
       /**
+       * Enforce consistent imports.
+       */
+      "@typescript-eslint/consistent-type-imports": [
+      "error",
+      {
+        prefer: "type-imports",
+        fixStyle: "inline-type-imports",
+      },
+    ],
+
+      /**
        * Variable usage rules
        * Allows underscores for intentionally unused variables.
        */
