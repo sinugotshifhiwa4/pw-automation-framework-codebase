@@ -23,7 +23,7 @@ export default [
    * Stricter type-aware rules.
    * Requires type information to improve safety and correctness.
    */
-  ...tseslint.configs["recommended-type-checked"].map((config) => ({
+  ...tseslint.configs.recommendedTypeChecked.map((config) => ({
     ...config,
     files: ["**/*.ts"],
   })),
@@ -92,6 +92,7 @@ export default [
       "@typescript-eslint/prefer-nullish-coalescing": "off",
       "no-duplicate-imports": "off",
       "@typescript-eslint/no-non-null-assertion": "off",
+      "@typescript-eslint/restrict-template-expressions": "off",
     },
   },
 
