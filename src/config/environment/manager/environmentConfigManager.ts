@@ -1,5 +1,5 @@
 import EnvironmentDetector from "../detector/environmentDetector.js";
-//import { CryptoService } from "../../../cryptography/service/cryptoService.js";
+import { CryptoService } from "../../../cryptography/service/cryptoService.js";
 import DataSanitizer from "../../../utils/sanitization/dataSanitizer.js";
 import EnvPathResolver from "../pathResolver/envPathResolver.js";
 import type { Credentials } from "../../authentication/types/credentials.types.js";
@@ -42,26 +42,26 @@ export default class EnvironmentConfigManager {
   /**
    * Decrypts credentials using the provided secret key
    */
-  // public static async decryptCredentials(
-  //   username: string,
-  //   password: string,
-  //   secretKey: string,
-  // ): Promise<Credentials> {
-  //   try {
-  //     const decryptedCredentials = await CryptoService.decryptMultiple(
-  //       [username, password],
-  //       secretKey,
-  //     );
+  public static async decryptCredentials(
+    username: string,
+    password: string,
+    secretKey: string,
+  ): Promise<Credentials> {
+    try {
+      const decryptedCredentials = await CryptoService.decryptMultiple(
+        [username, password],
+        secretKey,
+      );
 
-  //     return {
-  //       username: decryptedCredentials[0] as string,
-  //       password: decryptedCredentials[1] as string,
-  //     };
-  //   } catch (error) {
-  //     ErrorHandler.captureError(error, "decryptCredentials", "Failed to decrypt credentials");
-  //     throw error;
-  //   }
-  // }
+      return {
+        username: decryptedCredentials[0],
+        password: decryptedCredentials[1],
+      };
+    } catch (error) {
+      ErrorHandler.captureError(error, "decryptCredentials", "Failed to decrypt credentials");
+      throw error;
+    }
+  }
 
   /**
    * Verifies that the provided credentials contain both a username and password
