@@ -1,0 +1,21 @@
+
+# Playwright
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
+/.auth/
+/logs/
+/dist/
+/downloads/
+/downloads/
+
+# Environment configuration
+.env*
+!*.template
+
+
+# Intentionally tracked
+# .vscode/ - keeping this tracked as it contains project-specific prettier setup

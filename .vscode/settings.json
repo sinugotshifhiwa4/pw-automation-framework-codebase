@@ -1,0 +1,49 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[groovy]": {
+    "editor.defaultFormatter": "NicolasVuillamy.vscode-groovy-lint"
+  },
+
+  "cSpell.words": [
+    "ciphertext",
+    "esbenp",
+    "Encryptor",
+    "Logform",
+    "maxsize",
+    "NicolasVuillamy",
+    "OHRM",
+    "Sinugo",
+    "Tshifhiwa",
+    "uncolorize",
+    "VaapiVideoDecoder",
+    "viewports"
+  ],
+  "cSpell.ignorePaths": [
+    "node_modules/**",
+    "dist/**",
+    "logs/**",
+    "downloads/**",
+    "playwright-report/**",
+    "src/testData/**"
+  ],
+  "cSpell.allowCompoundWords": true,
+  "cSpell.caseSensitive": false,
+
+  "workbench.colorCustomizations": {},
+
+  "peacock.color": "#215732"
+}
