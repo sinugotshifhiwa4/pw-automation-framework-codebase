@@ -60,8 +60,8 @@ export const CRYPTO_CONSTANTS = {
     PREFIX: "ENC2:",
     VERSION: "v1",
     SEPARATOR: ":",
-    EXPECTED_PARTS: 4,
-    PREFIX_LENGTH: 4,
+    EXPECTED_PARTS: 5,
+    PREFIX_LENGTH: 5,
   } as EncryptionFormat,
   ALGORITHM: {
     CIPHER: "AES-GCM",
