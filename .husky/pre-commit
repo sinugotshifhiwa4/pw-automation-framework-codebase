@@ -1,0 +1,13 @@
+echo "Running lint-staged..."
+npx lint-staged
+
+echo "Scanning for '.only' usage in test files..."
+
+# Search for test.only, describe.only, it.only, etc.
+if grep -r -E '\b(it|describe|test)\.only\(' tests/ --exclude-dir=node_modules --include="*.spec.ts"; then
+  echo "Error: Push blocked. '.only' detected in test files."
+  echo "Please remove '.only' from test suites before committing."
+  exit 1
+fi
+
+echo "All checks passed. Proceeding with push..."
