@@ -1,6 +1,6 @@
-import { Locator } from "@playwright/test";
+import type { Locator } from "@playwright/test";
 import { BasePage } from "../../base/basePage.js";
-import { ToggleOptions } from "../types/toggle.type.js";
+import type { ToggleOptions } from "../types/toggle.type.js";
 import ErrorHandler from "../../../../utils/errorHandling/errorHandler.js";
 import logger from "../../../../config/logger/loggerManager.js";
 

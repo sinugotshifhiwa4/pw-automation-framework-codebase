@@ -1,7 +1,7 @@
 import type { Page } from "@playwright/test";
 import { BasePage } from "../../../layers/ui/base/basePage.js";
-import { RuntimeEnvVariableResolver } from "../../environment/runtimeVariableResolver/runtimeEnvVariableResolver.js";
-import { AuthenticationStatePersister } from "./internal/authenticationStatePersister.js";
+import type { RuntimeEnvVariableResolver } from "../../environment/runtimeVariableResolver/runtimeEnvVariableResolver.js";
+import type { AuthenticationStatePersister } from "./internal/authenticationStatePersister.js";
 import ErrorHandler from "../../../utils/errorHandling/errorHandler.js";
 
 export class LoginOrchestrator extends BasePage {
